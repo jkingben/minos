@@ -14,7 +14,7 @@ CLIENT_PREREQUISITE_PYTHON_LIBS = [
 
 # tank
 TANK_PREREQUISITE_PYTHON_LIBS = [
-  ('django', 'django', '1.5.5'),
+  ('django', 'django', '1.6.2'),
 ]
 
 TANK_DEFAULT_PORT = 8000
@@ -37,7 +37,7 @@ SUPERVISOR_DEPLOYMENT_DIRS = [
 
 # owl
 OWL_PREREQUISITE_PYTHON_LIBS = [
-  ('django', 'django', '1.5.5'),
+  ('django', 'django', '1.6.2'),
   ('ldap', 'python-ldap', '2.4.13'),
   ('django_auth_ldap', 'django-auth-ldap', '1.1.6'),
   ('twisted', 'twisted', '13.2.0'),
