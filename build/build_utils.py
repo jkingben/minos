@@ -118,8 +118,18 @@ def pip_install(module, module_version):
   cmd = [ENV_PIP, "install", "%s>=%s" % (module, module_version)]
   execute_command(cmd, log_message=log_message)
 
+def pip_install_url(module, module_version):
+  log_message = "Installing %s" % module
+  cmd = [ENV_PIP, "install", "%s" % (module_version)]
+  execute_command(cmd, log_message=log_message)
+
 def check_and_install_modules(modules_list):
   for module_key, module_val, module_version in modules_list:
     if not check_module_installed(module_key):
       pip_install(module_val, module_version)
+
+def check_and_install_modules_url(modules_list):
+  for module_key, module_val, module_version in modules_list:
+    if not check_module_installed(module_key):
+      pip_install_url(module_val, module_version)
 

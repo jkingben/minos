@@ -24,8 +24,10 @@ TANK_DEFAULT_IP = '0.0.0.0'
 SUPERVISOR_PREREQUISITE_PYTHON_LIBS = [
   ('setuptools', 'setuptools', '1.4.0'),
   ('meld3', 'meld3', '0.6.10'),
-  ('elementtree', 'elementtree', '1.2.6-20050316'),
   ('pexpect', 'pexpect', '3.0'),
+]
+SUPERVISOR_PREREQUISITE_PYTHON_LIBS_URL = [
+  ('elementtree', 'elementtree', 'http://effbot.org/media/downloads/elementtree-1.2.6-20050316.zip'),
 ]
 
 SUPERVISOR_DEPLOYMENT_DIRS = [

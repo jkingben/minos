@@ -43,6 +43,7 @@ def _build(args):
   # Check and install prerequisite python libraries
   Log.print_info("Check and install prerequisite python libraries")
   build_utils.check_and_install_modules(SUPERVISOR_PREREQUISITE_PYTHON_LIBS)
+  build_utils.check_and_install_modules_url(SUPERVISOR_PREREQUISITE_PYTHON_LIBS_URL)
 
   # Create deployment directory
   deploy_path = raw_input("Please input the root directory to deploy services " \
